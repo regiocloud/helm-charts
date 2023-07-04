@@ -25,13 +25,13 @@ serviceAccount:
 environment:
   NEXT_PUBLIC_LICENSE_CONSENT: "agree"
   DATABASE_URL: "postgresql://<user>:<pass>@<db-host>:<db-port>/<db-name>"
-  CALCOM_TELEMETRY_DISABLED: "1"
+  CALCOM_TELEMETRY_DISABLED: "true"
   NEXT_PUBLIC_WEBAPP_URL: 'http://localhost:3000'
-  EMAIL_FROM: ""
-  EMAIL_SERVER_HOST: ""
-  EMAIL_SERVER_PORT: ""
-  EMAIL_SERVER_USER: ""
-  EMAIL_SERVER_PASSWORD: ""
+  EMAIL_FROM: "noreply@local"
+  EMAIL_SERVER_HOST: "localhost"
+  EMAIL_SERVER_PORT: "587"
+  EMAIL_SERVER_USER: "localuser"
+  EMAIL_SERVER_PASSWORD: "secret"
   # It is highly recommended that the NEXTAUTH_SECRET must be overridden and very unique
   # Use `openssl rand -base64 32` to generate a key
   NEXTAUTH_SECRET: "secret"
