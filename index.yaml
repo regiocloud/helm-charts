@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  calcom:
+  - apiVersion: v2
+    appVersion: v3.0.10
+    created: "2023-07-04T15:02:22.803533232Z"
+    description: A Helm chart for calcom
+    digest: 58fb37d1bc755850bd8449ba1c0bf55835f5d8128345641dd53e1e921b6dbb57
+    name: calcom
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/calcom-0.1.0/calcom-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-04T15:02:22.803537732Z"
