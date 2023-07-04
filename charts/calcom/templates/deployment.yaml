@@ -49,7 +49,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
           - name: "NEXT_PUBLIC_LICENSE_CONSENT"
-            value: 'agree'
+            value: {{ .Values.environment.NEXT_PUBLIC_LICENSE_CONSENT }}
           - name: "DATABASE_URL"
             value: {{ .Values.environment.DATABASE_URL }}
           - name: "CALCOM_TELEMETRY_DISABLED"
