@@ -49,34 +49,33 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
           - name: "NEXT_PUBLIC_LICENSE_CONSENT"
-            value: {{ .Values.environment.NEXT_PUBLIC_LICENSE_CONSENT}}
             value: 'agree'
           - name: "DATABASE_URL"
-            value: {{ .Values.environment.DATABASE_URL}}
+            value: {{ .Values.environment.DATABASE_URL }}
           - name: "CALCOM_TELEMETRY_DISABLED"
-            value: {{ .Values.environment.CALCOM_TELEMETRY_DISABLED}}
+            value: {{ .Values.environment.CALCOM_TELEMETRY_DISABLED }}
           - name: "NEXT_PUBLIC_WEBAPP_URL"
-            value: {{ .Values.environment.NEXT_PUBLIC_WEBAPP_URL}}
+            value: {{ .Values.environment.NEXT_PUBLIC_WEBAPP_URL }}
           - name: "EMAIL_FROM"
-            value: {{ .Values.environment.EMAIL_FROM}}
+            value: {{ .Values.environment.EMAIL_FROM }}
           - name: "EMAIL_SERVER_HOST"
-            value: {{ .Values.environment.EMAIL_SERVER_HOST}}
+            value: {{ .Values.environment.EMAIL_SERVER_HOST }}
           - name: "EMAIL_SERVER_PORT"
-            value: {{ .Values.environment.EMAIL_SERVER_PORT}}
+            value: {{ .Values.environment.EMAIL_SERVER_PORT }}
           - name: "EMAIL_SERVER_USER"
-            value: {{ .Values.environment.EMAIL_SERVER_USER}}
+            value: {{ .Values.environment.EMAIL_SERVER_USER }}
           - name: "EMAIL_SERVER_PASSWORD"
-            value: {{ .Values.environment.EMAIL_SERVER_PASSWORD}}
+            value: {{ .Values.environment.EMAIL_SERVER_PASSWORD }}
           - name: "NEXTAUTH_SECRET"
-            value: {{ .Values.environment.NEXTAUTH_SECRET}}
+            value: {{ .Values.environment.NEXTAUTH_SECRET }}
           - name: "CALENDSO_ENCRYPTION_KEY"
-            value: {{ .Values.environment.CALENDSO_ENCRYPTION_KEY}}
+            value: {{ .Values.environment.CALENDSO_ENCRYPTION_KEY }}
           - name: "NEXT_PUBLIC_APP_NAME"
-            value: {{ .Values.environment.NEXT_PUBLIC_APP_NAME}}
+            value: {{ .Values.environment.NEXT_PUBLIC_APP_NAME }}
           - name: "NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS"
-            value: {{ .Values.environment.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS}}
+            value: {{ .Values.environment.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS }}
           - name: "NEXT_PUBLIC_COMPANY_NAME"
-            value: {{ .Values.environment.NEXT_PUBLIC_COMPANY_NAME}}
+            value: {{ .Values.environment.NEXT_PUBLIC_COMPANY_NAME }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
