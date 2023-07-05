@@ -49,7 +49,7 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             - name: NEXT_PUBLIC_LICENSE_CONSENT
-              value: {{ .Values.environment.NEXT_PUBLIC_LICENSE_CONSENT | quote }}
+              value: 'agree'
             - name: DATABASE_URL
               value: {{ .Values.environment.DATABASE_URL | quote }}
             - name: CALCOM_TELEMETRY_DISABLED
@@ -70,12 +70,6 @@ spec:
               value: {{ .Values.environment.NEXTAUTH_SECRET | quote }}
             - name: CALENDSO_ENCRYPTION_KEY
               value: {{ .Values.environment.CALENDSO_ENCRYPTION_KEY | quote }}
-            - name: NEXT_PUBLIC_APP_NAME
-              value: {{ .Values.environment.NEXT_PUBLIC_APP_NAME | quote }}
-            - name: NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS
-              value: {{ .Values.environment.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS | quote }}
-            - name: NEXT_PUBLIC_COMPANY_NAME
-              value: {{ .Values.environment.NEXT_PUBLIC_COMPANY_NAME | quote }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
