@@ -51,4 +51,15 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/calcom-0.1.0/calcom-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-05T11:40:18.829060748Z"
+  lemonldap-ng:
+  - apiVersion: v2
+    appVersion: 2.16.2
+    created: "2023-07-18T14:36:51.01896916Z"
+    description: A Helm chart for lemonLDAPng
+    digest: d918bf0ba501252adfeab29990ce9294b781f58d0cdd504920db389c60a2ad57
+    name: lemonldap-ng
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/lemonldap-ng-0.1.0/lemonldap-ng-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-18T14:36:51.01898096Z"
