@@ -1,5 +1,18 @@
 apiVersion: v1
 entries:
+  alertmanager-matrix:
+  - apiVersion: v2
+    appVersion: v0.7.2
+    created: "2023-09-22T14:43:57.576691962Z"
+    description: A bot to receive Prometheus Alertmanager webhook events and forward
+      them to chosen rooms.
+    digest: 52cf45358eaa138dbcd79bb0f104ad0927ec223a86dcde897a366183d00aa06d
+    icon: https://prometheus.io/assets/favicons/favicon.ico
+    name: alertmanager-matrix
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/alertmanager-matrix-1.0.0/alertmanager-matrix-1.0.0.tgz
+    version: 1.0.0
   calcom:
   - apiVersion: v2
     appVersion: v3.0.12
@@ -62,4 +75,4 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/lemonldap-ng-0.1.0/lemonldap-ng-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-18T14:36:51.01898096Z"
+generated: "2023-09-22T14:43:57.576703862Z"
