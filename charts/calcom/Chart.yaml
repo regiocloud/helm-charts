@@ -3,4 +3,4 @@ name: calcom
 description: A Helm chart for calcom
 type: application
 version: 0.2.1
-appVersion: "v3.0.12"
+appVersion: "v3.3.3"
