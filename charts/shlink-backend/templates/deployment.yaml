@@ -45,7 +45,7 @@ spec:
             - name: DB_DRIVER
               value: mariadb
             - name: DB_HOST
-              value: {{ include "mariadb.primary.name" .Subcharts.mariadb }}
+              value: {{ include "mariadb.primary.fullname" .Subcharts.mariadb }}
             - name: DB_PORT
               value: {{ coalesce .Values.mariadb.primary.service.ports.mysql .Values.mariadb.primary.service.port | quote }}
             - name: DB_NAME
@@ -63,7 +63,7 @@ spec:
             - name: DB_DRIVER
               value: mysql
             - name: DB_HOST
-              value: {{ include "mysql.primary.name" .Subcharts.mysql }}
+              value: {{ include "mysql.primary.fullname" .Subcharts.mysql }}
             - name: DB_PORT
               value: {{ .Values.mysql.primary.service.ports.mysql | quote }}
             - name: DB_NAME
@@ -81,13 +81,13 @@ spec:
             - name: DB_DRIVER
               value: postgres
             - name: DB_HOST
-              value: {{ include "postgresql.primary.name" .Subcharts.postgresql }}
+              value: {{ include "postgresql.v1.primary.fullname" .Subcharts.postgresql }}
             - name: DB_PORT
-              value: {{ include "postgresql.service.port" .Subcharts.postgresql | quote }}
+              value: {{ include "postgresql.v1.service.port" .Subcharts.postgresql | quote }}
             - name: DB_NAME
-              value: {{ include "postgresql.database" .Subcharts.postgresql }}
+              value: {{ include "postgresql.v1.database" .Subcharts.postgresql }}
             - name: DB_USER
-              value: {{ include "postgresql.username" .Subcharts.postgresql }}
+              value: {{ include "postgresql.v1.username" .Subcharts.postgresql }}
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
