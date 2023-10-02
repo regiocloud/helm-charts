@@ -85,4 +85,49 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/lemonldap-ng-0.1.0/lemonldap-ng-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-29T14:05:57.029032792Z"
+  shlink-backend:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: bumped chart version of postgresql to 12.12.9
+    apiVersion: v2
+    appVersion: 3.6.3
+    created: "2023-10-02T08:40:54.820636057Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.7
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.12.3
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.9
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.6
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.17.1
+    description: A PHP-based self-hosted URL shortener that can be used to serve shortened
+      URLs under your own domain.
+    digest: 3063a09b66898aa67fc9de36fde1d721e3552250466a1189d7e6b4fa32fc354e
+    home: https://github.com/christianknell/helm-charts
+    icon: https://shlink.io/images/shlink-logo-blue.svg
+    maintainers:
+    - email: christian@knell.it
+      name: christianknell
+    name: shlink-backend
+    sources:
+    - https://github.com/shlinkio/shlink
+    - https://shlink.io
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/shlink-backend-2.12.3/shlink-backend-2.12.3.tgz
+    version: 2.12.3
+generated: "2023-10-02T08:40:54.820654157Z"
