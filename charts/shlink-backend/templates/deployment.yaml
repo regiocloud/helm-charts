@@ -91,8 +91,8 @@ spec:
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "postgresql.secretName" .Subcharts.postgresql }}
-                  key: {{ template "postgresql.userPasswordKey" .Subcharts.postgresql }}
+                  name: {{ template "postgresql.v1.secretName" .Subcharts.postgresql }}
+                  key: {{ template "postgresql.v1.userPasswordKey" .Subcharts.postgresql }}
             {{- end }}
             # RabbitMQ Settings
             {{- if .Values.rabbitmq.enabled }}
