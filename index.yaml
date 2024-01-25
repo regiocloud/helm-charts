@@ -16,6 +16,16 @@ entries:
   calcom:
   - apiVersion: v2
     appVersion: v3.7.8
+    created: "2024-01-25T16:25:41.098664229Z"
+    description: A Helm chart for calcom
+    digest: df493a1d3ce5e51f5ce2cc82bf6ad1acb6b01e80d9ace0d010d7138b228651c4
+    name: calcom
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/calcom-0.5.1/calcom-0.5.1.tgz
+    version: 0.5.1
+  - apiVersion: v2
+    appVersion: v3.7.8
     created: "2024-01-25T15:58:37.940402986Z"
     description: A Helm chart for calcom
     digest: a8110e0ffaef438bf8f0315dfc842b7047f0afb56d7620e3effc0ae733c87661
@@ -238,4 +248,4 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/shlink-backend-2.12.3/shlink-backend-2.12.3.tgz
     version: 2.12.3
-generated: "2024-01-25T15:58:37.940442591Z"
+generated: "2024-01-25T16:25:41.098715505Z"
