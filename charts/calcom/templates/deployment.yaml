@@ -66,10 +66,6 @@ spec:
               value: {{ .Values.environment.EMAIL_SERVER_USER | quote }}
             - name: EMAIL_SERVER_PASSWORD
               value: {{ .Values.environment.EMAIL_SERVER_PASSWORD | quote }}
-            - name: SAML_DATABASE_URL
-              value: {{ .Values.environment.SAML_DATABASE_URL | quote }}
-            - name: SAML_ADMINS
-              value: {{ .Values.environment.SAML_ADMINS | quote }}
             - name: NEXTAUTH_SECRET
               value: {{ .Values.environment.NEXTAUTH_SECRET | quote }}
             - name: CALENDSO_ENCRYPTION_KEY
