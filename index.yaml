@@ -104,6 +104,17 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/calcom-0.1.0/calcom-0.1.0.tgz
     version: 0.1.0
+  hookshot:
+  - apiVersion: v2
+    appVersion: 5.3.0
+    created: "2024-06-17T14:00:53.601767485Z"
+    description: Deploy a Matrix Hookshot instance to Kubernetes
+    digest: eb1fe175f1c9c644e5a32a2dfb53b86fcab5e3622d1c72a1c24f9827303ea511
+    name: hookshot
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/hookshot-0.2.0/hookshot-0.2.0.tgz
+    version: 0.2.0
   lemonldap-ng:
   - apiVersion: v2
     appVersion: 2.16.2
@@ -248,4 +259,4 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/shlink-backend-2.12.3/shlink-backend-2.12.3.tgz
     version: 2.12.3
-generated: "2024-01-25T16:25:41.098715505Z"
+generated: "2024-06-17T14:00:53.601797542Z"
