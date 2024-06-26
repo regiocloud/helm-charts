@@ -106,6 +106,16 @@ entries:
     version: 0.1.0
   hookshot:
   - apiVersion: v2
+    appVersion: 5.4.1
+    created: "2024-06-26T08:53:35.671208553Z"
+    description: Deploy a Matrix Hookshot instance to Kubernetes
+    digest: 1a61a9d323f5a4806bbb0457d7ff522c5a8db0379ca5ff7ce92ea1e22212ac72
+    name: hookshot
+    type: application
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/hookshot-0.3.0/hookshot-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: 5.3.0
     created: "2024-06-17T14:00:53.601767485Z"
     description: Deploy a Matrix Hookshot instance to Kubernetes
@@ -259,4 +269,4 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/shlink-backend-2.12.3/shlink-backend-2.12.3.tgz
     version: 2.12.3
-generated: "2024-06-17T14:00:53.601797542Z"
+generated: "2024-06-26T08:53:35.671239932Z"
