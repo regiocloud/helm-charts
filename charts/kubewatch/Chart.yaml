@@ -1,0 +1,25 @@
+annotations:
+  category: Infrastructure
+apiVersion: v2
+appVersion: v2.7.0
+dependencies:
+  - name: common
+    repository: https://charts.bitnami.com/bitnami
+    tags:
+      - bitnami-common
+    version: 2.x.x
+description: Kubewatch is a Kubernetes watcher that currently publishes notification to Slack. Run it in your k8s cluster, and you will get event notifications in a slack channel.
+home: https://github.com/robusta-dev/kubewatch
+icon: https://bitnami.com/assets/stacks/kubewatch/img/kubewatch-stack-220x234.png
+keywords:
+  - kubernetes
+  - slack
+  - hipchat
+  - mattermost
+  - flock
+  - msteams
+maintainers: []
+name: kubewatch
+sources:
+  - https://github.com/robusta-dev/kubewatch
+version: 4.0.0
