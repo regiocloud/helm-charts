@@ -125,6 +125,37 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/hookshot-0.2.0/hookshot-0.2.0.tgz
     version: 0.2.0
+  kubewatch:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: v2.7.0
+    created: "2024-06-26T12:32:07.677512122Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kubewatch is a Kubernetes watcher that currently publishes notification
+      to Slack. Run it in your k8s cluster, and you will get event notifications in
+      a slack channel.
+    digest: 0d25ff93bb54fe71214709466fec4062e00c3b365d2e103fda3370321032a32a
+    home: https://github.com/robusta-dev/kubewatch
+    icon: https://bitnami.com/assets/stacks/kubewatch/img/kubewatch-stack-220x234.png
+    keywords:
+    - kubernetes
+    - slack
+    - hipchat
+    - mattermost
+    - flock
+    - msteams
+    name: kubewatch
+    sources:
+    - https://github.com/robusta-dev/kubewatch
+    urls:
+    - https://github.com/regiocloud/helm-charts/releases/download/kubewatch-4.0.0/kubewatch-4.0.0.tgz
+    version: 4.0.0
   lemonldap-ng:
   - apiVersion: v2
     appVersion: 2.16.2
@@ -269,4 +300,4 @@ entries:
     urls:
     - https://github.com/regiocloud/helm-charts/releases/download/shlink-backend-2.12.3/shlink-backend-2.12.3.tgz
     version: 2.12.3
-generated: "2024-06-26T08:53:35.671239932Z"
+generated: "2024-06-26T12:32:07.677556546Z"
